@@ -41,6 +41,10 @@ public class BadEmployee {
         System.out.println("saving to SQL db :]");
     }
 
+    public LocalDate getEmploymentDate() {
+        return employmentDate;
+    }
+
     public int getAvailableHoliday(){
         long months = ChronoUnit.MONTHS.between(employmentDate, LocalDate.now());
         return (int) (months * 2 - usedHolidays);
