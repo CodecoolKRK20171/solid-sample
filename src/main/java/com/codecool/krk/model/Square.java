@@ -7,8 +7,10 @@ public class Square extends Rectangle{
     }
 
     public void setWidth(float width){
-        this.width = width;
-        this.height = width;
+        super.setWidth(width);
+        super.setHeight(width);
+//        this.width = width;
+//        this.height = width;
     }
 
     public void setHeight(float height){
